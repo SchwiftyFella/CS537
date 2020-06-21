@@ -1,0 +1,5 @@
+a. The current thread would spawn a child. The child would see the command is invalid so instead of executing the command, it would wait but since it has no children continue. The thread that spawned the child would wait on it. The child thread would then spawn another child and the loop would continue.
+
+b. There would be multiple child threads that are waiting and need to be terminated. 
+
+c. You would need to quit multiple times to exit all the waiting child threads.
